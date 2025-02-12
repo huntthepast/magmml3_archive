@@ -1,2 +1,0 @@
-/*! For license information please see index.js.LICENSE.txt */
-(()=>{"use strict";var r={"./src/css/main.css":(r,e,t)=>{t.r(e)}},e={};function t(s){var o=e[s];if(void 0!==o)return o.exports;var n=e[s]={exports:{}};return r[s](n,n.exports,t),n.exports}t.r=r=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})};var s={};(()=>{t.r({});t("./src/css/main.css")})(),t.r(s)})();

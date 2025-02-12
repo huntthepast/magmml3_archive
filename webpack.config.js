@@ -6,17 +6,17 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const pages = [
-  { name: 'index', entry: './src/js/index.js', style: './src/css/index.css' },
-  { name: 'silverstar', entry: './src/js/silverstar.js', style: './src/css/silverstar.css' },
+  { name: 'index', entry: './src/js/index.js'},
+  { name: 'silverstar', entry: './src/js/silverstar.js'},
 ];
 
 module.exports = {
   entry: {
-    main: ['./src/js/main.js', './src/css/main.css'], // Main JS and CSS
+    main: ['./src/js/main.js'], // Main JS and CSS
     vendor: ['sweetalert2', 'lenis'], // Vendor libraries
     ...pages.reduce((config, page) => {
       config[page.name] = {
-        import: [page.entry, page.style], // Correct entry structure for each page
+        import: [page.entry], // Correct entry structure for each page
       };
       return config;
     }, {}),
@@ -59,6 +59,13 @@ module.exports = {
         },
       },
       {
+        test: /\.json$/,
+        type: "json",
+        generator: {
+          filename: 'database/[name][ext]',
+        },
+      },
+      {
         test: /\.css$/i, // For handling CSS
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
       },
@@ -66,21 +73,21 @@ module.exports = {
         test: /\.(mp4|webm)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'video/[name][ext]', // Keeps videos inside 'video/'
+          filename: 'video/[name][ext]',
         },
       },
       {
         test: /\.ico$/i,
         type: 'asset/resource',
         generator: {
-          filename: '[name][ext]', // Keeps favicon in the root (like before)
+          filename: '[name][ext]',
         },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'font/[name][ext]', // Keeps fonts inside 'font/'
+          filename: 'font/[name][ext]',
         },
       },
       {
