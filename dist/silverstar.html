@@ -13,52 +13,73 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black overflow-x-hidden">
-    <header class="flex justify-center items-center p-5 gap-4 bg-black">
-        <i class="bi bi-star-fill text-primary"></i>
-        <i class="bi bi-star-fill text-primary"></i>
-        <i class="bi bi-star-fill text-primary"></i>
-        <h1 class="text-primary font-mario text-6xl">Silver Star Observatory</h1>
-        <i class="bi bi-star-fill text-primary"></i>
-        <i class="bi bi-star-fill text-primary"></i>
-        <i class="bi bi-star-fill text-primary"></i>
+    <header class="flex justify-center items-center p-[1.389vw] gap-[1.111vw] bg-black">
+        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
+        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
+        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
+        <h1 class="text-primary font-mario text-[4.167vw]">Silver Star Observatory</h1>
+        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
+        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
+        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
     </header>
 
     <main class="grid grid-cols-7 font-poppins bg-[#2B193D]">
-        <aside class="col-span-1 grid h-full min-h-screen content-start bg-black border-r-2 border-black">
-            <nav class="sticky top-0 left-0 grid p-5 h-fit">
-                <ul class="grid gap-4">
+        <aside class="col-span-1 grid h-full min-h-screen content-start bg-black border-r-[0.139vw] border-black">
+            <nav class="sticky top-0 left-0 grid p-[1.389vw] h-fit">
+                <ul class="grid gap-[1.111vw] font-semibold text-[1.111vw]">
                     <li>
-                        <a href="/" class="flex items-center p-3 gap-2 bg-primary hover:bg-amber-400 rounded-2xl overflow-hidden transition duration-300 ease-in-out">
+                        <a href="/" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-house-door-fill"></i> Home
                         </a>
                     </li>
                     <li>
-                        <a href="/" class="flex items-center p-3 gap-2 bg-primary hover:bg-amber-400 rounded-2xl overflow-hidden transition duration-300 ease-in-out">
+                        <a href="/" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-journals"></i> Introduction
                         </a>
                     </li>
                     <li>
-                        <a href="/" class="flex items-center p-3 gap-2 bg-primary hover:bg-amber-400 rounded-2xl overflow-hidden transition duration-300 ease-in-out">
+                        <a href="/" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-star-fill"></i> Silver Star
                         </a>
                     </li>
                     <li>
-                        <a href="/" class="flex items-center p-3 gap-2 bg-primary hover:bg-amber-400 rounded-2xl overflow-hidden transition duration-300 ease-in-out">
+                        <a href="/" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-question-diamond-fill"></i> FAQ
                         </a>
                     </li>
                     <li>
-                        <a href="/" class="flex items-center p-3 gap-2 bg-primary hover:bg-amber-400 rounded-2xl overflow-hidden transition duration-300 ease-in-out">
-                            <i class="bi bi-download"></i> Download 2
+                        <a href="/" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                            <i class="bi bi-download"></i> Download
                         </a>
                     </li>
                 </ul>
             </nav>
         </aside>
     
-        <section class="col-span-6 relative grid content-start gap-3">
-            <div class="sticky top-0 flex justify-between p-4 bg-primary border-b-2 border-b-black shadow-md z-10">
-                <div class="flex gap-4">
+        <section class="col-span-6 relative grid content-start gap-[0.833vw]">
+            <div class="sticky top-0 flex justify-between p-[1.111vw] bg-primary text-[1.111vw] border-b-[0.139vw] border-b-black shadow-black shadow-md z-10">
+                <div class="flex items-center gap-[1.111vw]">
+                    <p>Show Tier:</p>
+                    <select name="sortOrder" id="sortOrder">
+                        <option value="all">All</option>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                        <option value="1">6</option>
+                        <option value="1">7</option>
+                        <option value="1">8</option>
+                        <option value="1">9</option>
+                        <option value="1">10</option>
+                        <option value="1">11</option>
+                        <option value="1">12</option>
+                        <option value="1">13</option>
+                        <option value="1">14</option>
+                        <option value="1">15</option>
+                        <option value="1">Wily</option>
+                        <option value="1">X</option>
+                    </select>
                     <p>Sort By:</p>
                     <select name="sortOrder" id="sortOrder">
                         <option value="Ascend">Ascend</option>
@@ -71,18 +92,21 @@
                         <option value="90">90</option>
                     </select>
                 </div>
-                <div class="flex gap-4">
+                <div class="flex rounded-[1.111vw] border-black border-[0.139vw] overflow-hidden">
                     <div class="grid">
-                        <input type="text" placeholder="search...">
+                        <input type="text" class="grid py-[0.556vw] px-[0.833vw] bg-tertiary outline-0" placeholder="search...">
                     </div>
+                    <button type="button" class="grid place-content-center p-[0.833vw] text-white hover:text-black bg-black hover:bg-amber-400 border-black border-l-[0.139vw] transition duration-300 cursor-pointer">
+                        <i class="text-[1.111vw] bi bi-search"></i>
+                    </button>
                 </div>
             </div>
-            <div id="stageGallery" class="grid grid-cols-4 content-start p-5 gap-x-4 gap-y-5">
+            <div id="stageGallery" class="grid grid-cols-4 content-start p-[1.389vw] pb-[4.444vw] gap-x-[1.111vw] gap-y-[1.389vw]">
             </div>
         </section>
     </main>
 
-    <footer class="grid place-content-center p-4 text-white bg-black">
+    <footer class="grid place-content-center p-[1.111vw] text-[1.111vw] text-white bg-black">
         Created by Hunt the Past
     </footer>
 
