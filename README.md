@@ -8,6 +8,6 @@ A Dedicated Archive for all information regarding MaGMML3 that I have found and 
 - [@huntthepast](https://github.com/huntthepast)
 
 
-## Silver Star Download Link:
+## Silver Star Image Download Link:
 
 Tier 1: [Download Link](https://github.com/huntthepast/magmml3_archive/releases/download/v.0.1.0/Tier.1.Star.zip)
