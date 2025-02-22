@@ -12,9 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black overflow-x-hidden">
+<body class="relative bg-black overflow-x-hidden">
+    <div class="fixed top-0 left-0 w-screen h-screen -z-20">
+        <picture class="w-full h-full">
+            <source src="img/galaxy1_resized.webp" type="image/webp">
+            <img src="img/galaxy1_resized.png" alt="X6meme / Silver Star" class="w-full h-full object-center object-cover opacity-40">
+        </picture>
+    </div>
+
     <!-- Header -->
-    <header class="flex justify-center items-center p-[1.389vw] gap-[1.111vw] bg-black">
+    <header class="flex justify-center items-center p-[1.389vw] gap-[1.111vw]">
         <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
         <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
         <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
@@ -212,9 +219,9 @@
                     <button type="button" class="button-img flex items-center justify-center p-[0.833vw] gap-[0.278vw] font-semibold text-[1.111vw] text-white/60 disabled:hover:text-white/60 bg-black disabled:hover:bg-black hover:bg-amber-400 hover:text-black disabled:hover:scale-100 hover:scale-110 rounded-[1.111vw] border-[0.139vw] border-primary disabled:hover:border-primary hover:border-black transition duration-300 disabled:cursor-default cursor-pointer"><i class="bi bi-image"></i> Button</button>
                 </div>
                 <div class="silverstar-video-link col-span-2 grid grid-cols-3 place-content-center gap-[0.833vw]">
-                    <a href="/" target="_blank" class="flex items-center justify-center p-[0.833vw] gap-[0.278vw] font-semibold text-[1.111vw] text-white/60 disabled:hover:text-white/60 bg-black disabled:hover:bg-black hover:bg-amber-400 hover:text-black disabled:hover:scale-100 hover:scale-110 rounded-[1.111vw] border-[0.139vw] border-primary disabled:hover:border-primary hover:border-black transition duration-300 disabled:cursor-default cursor-pointer">Video - E1</a>
-                    <a href="/" target="_blank" class="flex items-center justify-center p-[0.833vw] gap-[0.278vw] font-semibold text-[1.111vw] text-white/60 disabled:hover:text-white/60 bg-black disabled:hover:bg-black hover:bg-amber-400 hover:text-black disabled:hover:scale-100 hover:scale-110 rounded-[1.111vw] border-[0.139vw] border-primary disabled:hover:border-primary hover:border-black transition duration-300 disabled:cursor-default cursor-pointer">Video - E2</a>
-                    <a href="/" target="_blank" class="flex items-center justify-center p-[0.833vw] gap-[0.278vw] font-semibold text-[1.111vw] text-white/60 disabled:hover:text-white/60 bg-black disabled:hover:bg-black hover:bg-amber-400 hover:text-black disabled:hover:scale-100 hover:scale-110 rounded-[1.111vw] border-[0.139vw] border-primary disabled:hover:border-primary hover:border-black transition duration-300 disabled:cursor-default cursor-pointer">Video - E3</a>
+                    <a href="/" target="_blank" class="flex items-center justify-center p-[0.833vw] gap-[0.278vw] font-semibold text-[1.111vw] text-white/60 bg-black hover:bg-amber-400 hover:text-black hover:scale-110 rounded-[1.111vw] border-[0.139vw] border-primary hover:border-black transition duration-300 cursor-pointer">Video - E1</a>
+                    <a href="/" target="_blank" class="flex items-center justify-center p-[0.833vw] gap-[0.278vw] font-semibold text-[1.111vw] text-white/60 bg-black hover:bg-amber-400 hover:text-black hover:scale-110 rounded-[1.111vw] border-[0.139vw] border-primary hover:border-black transition duration-300 cursor-pointer">Video - E2</a>
+                    <a href="/" target="_blank" class="flex items-center justify-center p-[0.833vw] gap-[0.278vw] font-semibold text-[1.111vw] text-white/60 bg-black hover:bg-amber-400 hover:text-black hover:scale-110 rounded-[1.111vw] border-[0.139vw] border-primary hover:border-black transition duration-300 cursor-pointer">Video - E3</a>
                 </div>
             </div>
 
@@ -246,13 +253,13 @@
         </div>
     </div>
 
-    <main class="grid grid-cols-7 font-poppins bg-[#2B193D]">
+    <main class="grid grid-cols-7 font-poppins">
         <!-- Sidebar -->
-        <aside class="col-span-1 grid h-full min-h-screen content-start bg-black border-r-[0.139vw] border-black">
+        <aside class="col-span-1 grid h-full min-h-screen content-start bg-[#2B193D] border-r-[0.139vw] border-black">
             <nav class="sticky top-0 left-0 grid p-[1.389vw] h-fit">
                 <ul class="grid gap-[1.111vw] font-semibold text-[1.111vw]">
                     <li>
-                        <a href="/" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <a href="silverstar_home.html" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-house-door-fill"></i> Home
                         </a>
                     </li>
@@ -262,7 +269,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <a href="silverstar.html" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-star-fill"></i> Silver Star
                         </a>
                     </li>
@@ -306,7 +313,7 @@
         </section>
     </main>
 
-    <footer class="grid place-content-center p-[1.111vw] text-[1.111vw] text-white bg-black">
+    <footer class="grid place-content-center p-[1.111vw] text-[1.111vw] bg-black text-white">
         Created by Hunt the Past
     </footer>
 

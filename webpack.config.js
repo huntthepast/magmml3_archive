@@ -7,7 +7,11 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const pages = [
   { name: 'index', entry: './src/js/index.js'},
+  { name: 'silverstar_home', entry: './src/js/silverstar_home.js'},
+  { name: 'silverstar_intro', entry: './src/js/silverstar_intro.js'},
   { name: 'silverstar', entry: './src/js/silverstar.js'},
+  { name: 'silverstar_faq', entry: './src/js/silverstar_faq.js'},
+  { name: 'silverstar_download', entry: './src/js/silverstar_download.js'},
 ];
 
 module.exports = {
