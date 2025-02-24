@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="relative grid content-between bg-black overflow-x-hidden h-screen">
+<body class="relative grid content-between bg-black overflow-x-hidden min-h-screen">
+    <!-- Bcakground Image -->
     <div class="fixed top-0 left-0 w-screen h-screen -z-20">
         <picture class="w-full h-full">
             <source src="img/galaxy1_resized.webp" type="image/webp">
@@ -21,45 +22,45 @@
     </div>
 
     <!-- Header -->
-    <header class="grid font-mario">
-        <div class="flex justify-center items-center p-[1.389vw] gap-[1.111vw]">
-            <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-            <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-            <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-            <h1 class="text-primary text-[4.167vw]">Silver Star Observatory</h1>
-            <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-            <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-            <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
+    <header class="grid font-mario overflow-hidden">
+        <div class="greenstar-container">
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <h1 class="greenstar-text">Silver Star Observatory</h1>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
         </div>
     </header>
 
-    <main class="relative grid py-[4.444vw] px-[8.333vw] gap-[1.111vw] font-poppins text-white ">
-        <h1 class="font-bold text-center text-[2.222vw]">Welcome to Silver Star Observatory</h1>
-        <div class="grid mx-auto gap-[1.111vw] max-w-[66.667vw]">
-            <p class="text-justify text-[1.111vw]">This section of the website is dedicated to providing comprehensive information about the Silver Star, a special collectible in Make a Good Mega Man Level 3 (MaGMML 3). Whether you're a new player looking to understand its purpose or a completionist aiming to collect them all, this website serves as your ultimate resource.</p>
-            <p class="text-justify text-[1.111vw]">If you're new, I advise you to check out the Introduction page to learn more about MaGMML 3 and how Silver Stars fit into the game. Otherwise, head over to the Silver Star page for full details on their locations and how to obtain them.</p>
-            <p class="text-[1.111vw]">Happy hunting Star Seeker! <span class="text-black text-[0.556vw]"> And may your heart not descend into madness as mine does on this journey.</span></p>
+    <main class="relative grid py-[20.513vw] lg:py-[4.444vw] px-[3.59vw] lg:px-[8.333vw] gap-[4.103vw] lg:gap-[1.111vw] font-poppins text-white ">
+        <h1 class="header-main">Welcome to Silver Star Observatory</h1>
+        <div class="paragraph-container">
+            <p class="text-justify">This section of the website is dedicated to providing comprehensive information about the Silver Star, a special collectible in Make a Good Mega Man Level 3 (MaGMML 3). Whether you're a new player looking to understand its purpose or a completionist aiming to collect them all, this website serves as your ultimate resource.</p>
+            <p class="text-justify">If you're new, I advise you to check out the Introduction page to learn more about MaGMML 3 and how Silver Stars fit into the game. Otherwise, head over to the Silver Star page for full details on their locations and how to obtain them.</p>
+            <p class="text-left">Happy hunting Star Seeker! <span class="hidden-text"> And may your heart not descend into madness as mine does on this journey.</span></p>
         </div>
-        <section class="grid content-start mx-auto mt-[2.222vw] gap-[1.111vw] w-full max-w-[66.667vw] text-black bg-primary/30 rounded-[1.111vw]">
+        <section class="grid content-start mx-auto mt-[2.222vw] gap-[1.111vw] w-full lg:max-w-[66.667vw] text-black bg-primary/30 rounded-[1.111vw]">
             <nav class="grid p-[1.389vw]">
-                <ul class="grid grid-cols-4 gap-[1.111vw] font-semibold text-[1.111vw]">
+                <ul class="grid grid-cols-2 lg:grid-cols-4 gap-[3.077vw] lg:gap-[1.111vw] font-semibold text-[3.59vw] lg:text-[1.111vw]">
                     <li>
-                        <a href="silverstar_intro.html" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <a href="silverstar_intro.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[3.077vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-journals"></i> Introduction
                         </a>
                     </li>
                     <li>
-                        <a href="silverstar.html" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <a href="silverstar.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[3.077vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-star-fill"></i> Silver Star
                         </a>
                     </li>
                     <li>
-                        <a href="silverstar_faq.html" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <a href="silverstar_faq.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[3.077vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-question-diamond-fill"></i> FAQ
                         </a>
                     </li>
                     <li>
-                        <a href="silverstar_download.html" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <a href="silverstar_download.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[3.077vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-download"></i> Download
                         </a>
                     </li>
@@ -68,7 +69,7 @@
         </section>
     </main>
 
-    <footer class="grid place-content-center p-[1.111vw] text-[1.111vw] text-white">
+    <footer class="grid place-content-center p-[4.103vw] lg:p-[1.111vw] text-[3.59vw] lg:text-[1.111vw] text-white">
         Created by Hunt the Past
     </footer>
 

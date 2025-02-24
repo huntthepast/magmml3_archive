@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-black overflow-x-hidden">
+    <!-- Bcakground Image -->
     <div class="fixed top-0 left-0 w-screen h-screen -z-20">
         <picture class="w-full h-full">
             <source src="img/galaxy1_resized.webp" type="image/webp">
@@ -21,21 +22,77 @@
     </div>
 
     <!-- Header -->
-    <header class="flex justify-center items-center p-[1.389vw] gap-[1.111vw]">
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <h1 class="text-primary font-mario text-[4.167vw]">Silver Star Observatory</h1>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
+    <header class="grid font-mario overflow-hidden">
+        <div class="greenstar-container">
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <h1 class="greenstar-text">Silver Star Observatory</h1>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+        </div>
     </header>
 
-    <main class="relative grid content-start pb-[4.444vw] gap-[4.444vw] font-poppins">
+    <aside class="sidebar fixed top-0 left-0 grid w-full h-full content-start bg-[#2B193D] -translate-x-full lg:-translate-x-full transition duration-300 z-40">
+        <div class="grid font-mario overflow-hidden">
+            <div class="greenstar-container">
+                <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+                <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+                <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+                <h1 class="greenstar-text">Silver Star Observatory</h1>
+                <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+                <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+                <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+            </div>
+        </div>
+        <div class="grid items-center p-[3.59vw] font-semibold text-[3.59vw] lg:text-[1.111vw]">
+            <button type="button" class="sidebar-btn flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] text-black bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out cursor-pointer">
+                <i class="bi bi-box-arrow-right"></i> Exit Sidebar 
+            </button>
+        </div>
+        <div class="grid p-[3.59vw] pt-[8.205vw] lg:p-[1.389vw]">
+            <ul class="grid lg:flex lg:justify-center gap-[6.154vw] lg:gap-[1.111vw] font-semibold text-[3.59vw] lg:text-[1.111vw]">
+                <li>
+                    <a href="silverstar_home.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-house-door-fill"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="silverstar_intro.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-journals"></i> Introduction
+                    </a>
+                </li>
+                <li>
+                    <a href="silverstar.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-star-fill"></i> Silver Star
+                    </a>
+                </li>
+                <li>
+                    <a href="silverstar_faq.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-question-diamond-fill"></i> FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="silverstar_download.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="relative grid content-start pb-[4.444vw] gap-[12.308vw] lg:gap-[4.444vw] font-poppins">
         <!-- Navbar -->
-        <nav class="sticky top-0 left-0 grid h-fit content-start bg-[#2B193D] border-r-[0.139vw] border-black">
-            <div class="grid p-[1.389vw]">
-                <ul class="flex justify-center gap-[1.111vw] font-semibold text-[1.111vw]">
+        <nav class="sticky top-0 left-0 grid w-full lg:h-fit content-start bg-[#2B193D] transition duration-300">
+            <div class="flex items-center justify-center lg:hidden p-[2.051vw] text-white">
+                <button type="button" class="sidebar-btn shrink-0 flex items-center px-[3.59vw] py-[2.051vw] gap-x-[3.077vw] text-black bg-primary hover:bg-amber-400 transition duration-300 cursor-pointer">
+                    <p class="font-medium text-[4.615vw]">Menu</p><i class="text-[4.615vw] bi bi-list-ul"></i>
+                </button>
+            </div>
+
+            <div class="hidden lg:grid p-[3.59vw] pt-[8.205vw] lg:p-[1.389vw]">
+                <ul class="grid lg:flex lg:justify-center gap-[3.077vw] lg:gap-[1.111vw] font-semibold text-[3.59vw] lg:text-[1.111vw]">
                     <li>
                         <a href="silverstar_home.html" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-house-door-fill"></i> Home
@@ -66,53 +123,58 @@
         </nav>
 
         <!-- What is MaGMML -->
-        <section class="grid content-start gap-[0.833vw] text-white">
-            <h1 class="font-bold text-center text-[2.222vw]">What is MaGMML 3?</h1>
-            <div class="grid mx-auto gap-[1.111vw] max-w-[66.667vw]">
-                <p class="text-justify text-[1.111vw]">Make a Good Mega Man Level 3 (MaGMML 3) is the third entry in the Make a Good Mega Man Level series, a fan-made project where players submit custom levels that are compiled into a full game. Known for its community-driven creativity, diverse level designs, and original mechanics, MaGMML 3 expands on its predecessors with improved gameplay, a larger hub world, and new collectibles like Silver Stars which probably the reason why you're here. It offers a mix of challenge, exploration, and post-game content, making it a standout in the series while continuing to push the boundaries of fan-made Mega Man experiences.</p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">You can get the game from this link: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="https://magmmlcontest.com/magmml3.php">MaGMML 3 Download Page</a></span></p>
+        <section class="section-container">
+            <h1 class="header-main">What is MaGMML 3?</h1>
+            <div class="paragraph-container">
+                <p class="text-justify">Make a Good Mega Man Level 3 (MaGMML 3) is the third entry in the Make a Good Mega Man Level series, a fan-made project where players submit custom levels that are compiled into a full game. Known for its community-driven creativity, diverse level designs, and original mechanics, MaGMML 3 expands on its predecessors with improved gameplay, a larger hub world, and new collectibles like Silver Stars which probably the reason why you're here. It offers a mix of challenge, exploration, and post-game content, making it a standout in the series while continuing to push the boundaries of fan-made Mega Man experiences.</p>
+                <p class="grid lg:flex gap-[3.077vw] lg:gap-[0.556vw] text-center lg:text-left">You can get the game from this link: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="https://magmmlcontest.com/magmml3.php">MaGMML 3 Download Page</a></span></p>
             </div>
         </section>
 
-        <div class="grid mx-auto w-full h-[0.069vw] bg-white max-w-[66.667vw]"></div>
+        <div class="grid px-[3.59vw] lg:px-0 w-full">
+            <div class="grid mx-auto w-full h-[0.256vw] lg:h-[0.069vw] bg-white lg:max-w-[66.667vw]"></div>
+        </div>
 
-        <section class="grid content-start gap-[0.833vw] text-white">
-            <h1 class="font-bold text-center text-[2.222vw]">What is a Silver Star?</h1>
-            <div class="grid mx-auto gap-[1.111vw] max-w-[66.667vw]">
-                <p class="text-justify text-[1.111vw]">The Silver Star is a special collectible introduced in MaGMML 3 with the version 1.1 update, which also finalized Proto Man and Bass Mode and added the Silver Star cheat to the game. This cheat, originally named ???????, was later renamed "Green Stars...?" and can be purchased from Eddy’s Cheat Shop in the Plaza floor of the hotel hub.</p>
-                <p class="text-justify text-[1.111vw]">While not confirmed, it is presumably unlocked after collecting every Energy Element and all tokens from all simulations. Once activated, Silver Stars will appear in all levels, with the exception of the Arena, hubs, tier bosses, and casino minigames. Most levels contain at least five stars, except The Shrine of Nebula, which features 25 stars, 5 per floor.</p>
+        <section class="section-container">
+            <h1 class="header-main">What is a Silver Star?</h1>
+            <div class="paragraph-container">
+                <p class="text-justify">The Silver Star is a special collectible introduced in MaGMML 3 with the version 1.1 update, which also finalized Proto Man and Bass Mode and added the Silver Star cheat to the game. This cheat, originally named ???????, was later renamed "Green Stars...?" and can be purchased from Eddy’s Cheat Shop in the Plaza floor of the hotel hub.</p>
+                <p class="text-justify">While not confirmed, it is presumably unlocked after collecting every Energy Element and all tokens from all simulations. Once activated, Silver Stars will appear in all levels, with the exception of the Arena, hubs, tier bosses, and casino minigames. Most levels contain at least five stars, except The Shrine of Nebula, which features 25 stars, 5 per floor.</p>
             </div>
         </section>
 
-        <div class="grid mx-auto w-full h-[0.069vw] bg-white max-w-[66.667vw]"></div>
+        <div class="grid px-[3.59vw] lg:px-0 w-full">
+            <div class="grid mx-auto w-full h-[0.256vw] lg:h-[0.069vw] bg-white lg:max-w-[66.667vw]"></div>
+        </div>
 
-        <section class="grid content-start gap-[0.833vw] text-white">
-            <h1 class="font-bold text-center text-[2.222vw]">How Silver Stars Work</h1>
-            <ul class="grid mx-auto gap-[1.111vw] max-w-[66.667vw]">
-                <li class="list-disc ml-[1.25vw] pl-[1.111vw] text-[1.111vw]">They function similarly to the Green Stars from MaGMML 2. A collectible that requires thorough exploration, searching through every nook and cranny of a level to find them.</li>
-                <li class="list-disc ml-[1.25vw] pl-[1.111vw] text-[1.111vw]">You’ll need to use everything in your arsenal, including alternate weapons, to reach and collect them.</li>
-                <li class="list-disc ml-[1.25vw] pl-[1.111vw] text-[1.111vw]">Silver Stars are invisible unless the player is very close. Every around three seconds (might be different depending on the star), flickering particles, matching the background color, will hint at their location.</li>
-                <li class="list-disc ml-[1.25vw] pl-[1.111vw] text-[1.111vw]">Some stars require pressing a button to appear. These stars are timed, meaning you must find them before the countdown reaches zero.</li>
-                <li class="list-disc ml-[1.25vw] pl-[1.111vw] text-[1.111vw]">In cases where multiple buttons appear in a single room, not all of them are real. Only one will actually spawn a Silver Star (with the only exception being Crashman Simulator). Some buttons may also be affected by gravity, causing them to fall into pits or be destroyed by other objects before you can press them.</li>
-                <li class="list-disc ml-[1.25vw] pl-[1.111vw] text-[1.111vw]">While Green Stars...? cheat is active, all beneficial cheats are disabled, except for some funny ones. (Once all five stars are collected in a level, this restriction is removed.)</li>
-                <li class="list-disc ml-[1.25vw] pl-[1.111vw] text-[1.111vw]">There is no in-game reward for collecting Silver Stars. However, in a weighted-cheat run, collecting a star slightly lowers your time (exact amount unknown).</li>
-                <li class="list-disc ml-[1.25vw] pl-[1.111vw] text-[1.111vw]">For speedrunners, the Star Seeker category only allows the Green Stars...? cheat, optionally with Proto Man or Bass Mode. In this category, stars collected matter more than time, so aim to collect all five as quickly as possible!</li>
+        <section class="section-container">
+            <h1 class="header-main">How Silver Stars Work</h1>
+            <ul class="paragraph-container">
+                <li class="list-disc ml-[3.59vw] lg:ml-[1.25vw] pl-[2.051vw] lg:pl-[1.111vw] text-justify lg:text-left">They function similarly to the Green Stars from MaGMML 2. A collectible that requires thorough exploration, searching through every nook and cranny of a level to find them.</li>
+                <li class="list-disc ml-[3.59vw] lg:ml-[1.25vw] pl-[2.051vw] lg:pl-[1.111vw] text-justify lg:text-left">You’ll need to use everything in your arsenal, including alternate weapons, to reach and collect them.</li>
+                <li class="list-disc ml-[3.59vw] lg:ml-[1.25vw] pl-[2.051vw] lg:pl-[1.111vw] text-justify lg:text-left">Silver Stars are invisible unless the player is very close. Every around three seconds (might be different depending on the star), flickering particles, matching the background color, will hint at their location.</li>
+                <li class="list-disc ml-[3.59vw] lg:ml-[1.25vw] pl-[2.051vw] lg:pl-[1.111vw] text-justify lg:text-left">Some stars require pressing a button to appear. These stars are timed, meaning you must find them before the countdown reaches zero.</li>
+                <li class="list-disc ml-[3.59vw] lg:ml-[1.25vw] pl-[2.051vw] lg:pl-[1.111vw] text-justify lg:text-left">In cases where multiple buttons appear in a single room, not all of them are real. Only one will actually spawn a Silver Star (with the only exception being Crashman Simulator). Some buttons may also be affected by gravity, causing them to fall into pits or be destroyed by other objects before you can press them.</li>
+                <li class="list-disc ml-[3.59vw] lg:ml-[1.25vw] pl-[2.051vw] lg:pl-[1.111vw] text-justify lg:text-left">While Green Stars...? cheat is active, all beneficial cheats are disabled, except for some funny ones. (Once all five stars are collected in a level, this restriction is removed.)</li>
+                <li class="list-disc ml-[3.59vw] lg:ml-[1.25vw] pl-[2.051vw] lg:pl-[1.111vw] text-justify lg:text-left">There is no in-game reward for collecting Silver Stars. However, in a weighted-cheat run, collecting a star slightly lowers your time (exact amount unknown).</li>
+                <li class="list-disc ml-[3.59vw] lg:ml-[1.25vw] pl-[2.051vw] lg:pl-[1.111vw] text-justify lg:text-left">For speedrunners, the Star Seeker category only allows the Green Stars...? cheat, optionally with Proto Man or Bass Mode. In this category, stars collected matter more than time, so aim to collect all five as quickly as possible!</li>
             </ul>
         </section>
 
-        <div class="grid mx-auto w-full h-[0.069vw] bg-white max-w-[66.667vw]"></div>
+        <div class="grid px-[3.59vw] lg:px-0 w-full">
+            <div class="grid mx-auto w-full h-[0.256vw] lg:h-[0.069vw] bg-white lg:max-w-[66.667vw]"></div>
+        </div>
 
-
-        <section class="grid content-start gap-[0.833vw] text-white">
-            <div class="grid mx-auto gap-[1.111vw] max-w-[66.667vw]">
-                <p class="text-center text-[1.111vw]">This should get you up to speed about Silver Stars.</p>
-                <p class="text-center text-[1.111vw]">Next, check out the <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a href="silverstar.html">Silver Star page</a></span> to find their locations.</p>
-                <p class="text-center text-[1.111vw]">If you still have questions, visit the <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a href="silverstar_faq.html">FAQ page</a></span> for more details. Happy hunting!</p>
+        <section class="section-container">
+            <div class="paragraph-container">
+                <p class="text-left lg:text-center">This should get you up to speed about Silver Stars.</p>
+                <p class="text-left lg:text-center">Next, check out the <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a href="silverstar.html">Silver Star page</a></span> to find their locations.</p>
+                <p class="text-left lg:text-center">If you still have questions, visit the <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a href="silverstar_faq.html">FAQ page</a></span> for more details. Happy hunting!</p>
             </div>
         </section>
     </main>
 
-    <footer class="grid place-content-center p-[1.111vw] text-[1.111vw] text-white">
+    <footer class="grid place-content-center p-[4.103vw] lg:p-[1.111vw] text-[3.59vw] lg:text-[1.111vw] text-white">
         Created by Hunt the Past
     </footer>
 
@@ -128,6 +190,6 @@
 
     <!-- JS -->
     <script defer src="js/vendors.js"></script>
-    <script defer src="js/silverstar_home.js"></script>
+    <script defer src="js/silverstar_intro.js"></script>
 </body>
 </html>
