@@ -21,21 +21,81 @@
     </div>
 
     <!-- Header -->
-    <header class="flex justify-center items-center p-[1.389vw] gap-[1.111vw]">
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <h1 class="text-primary font-mario text-[4.167vw]">Silver Star Observatory</h1>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
-        <i class="grid place-content-center w-[1.111vw] h-[1.667vw] bi bi-star-fill text-[1.2vw] text-primary"></i>
+    <header class="grid font-mario overflow-hidden">
+        <div class="greenstar-container">
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+            <h1 class="greenstar-text">Silver Star Observatory</h1>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+            <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+        </div>
     </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar fixed top-0 left-0 grid w-full h-full content-start bg-[#2B193D] -translate-x-full lg:-translate-x-full transition duration-300 z-40">
+        <div class="grid font-mario overflow-hidden">
+            <div class="greenstar-container">
+                <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+                <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+                <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
+                <h1 class="greenstar-text">Silver Star Observatory</h1>
+                <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+                <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+                <i class="greenstar-icon relative -left-[8.205vw] lg:left-0 bi bi-star-fill"></i>
+            </div>
+        </div>
+        <div class="grid items-center p-[3.59vw] font-semibold text-[3.59vw] lg:text-[1.111vw]">
+            <button type="button" class="sidebar-btn flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] text-black bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out cursor-pointer">
+                <i class="bi bi-box-arrow-right"></i> Exit Sidebar 
+            </button>
+        </div>
+        <div class="grid p-[3.59vw] w-full">
+            <div class="grid mx-auto w-full h-[0.256vw] lg:h-[0.069vw] bg-white/70 lg:max-w-[66.667vw]"></div>
+        </div>
+        <div class="grid p-[3.59vw] pt-[8.205vw] lg:p-[1.389vw]">
+            <ul class="grid lg:flex lg:justify-center gap-[6.154vw] lg:gap-[1.111vw] font-semibold text-[3.59vw] lg:text-[1.111vw]">
+                <li>
+                    <a href="silverstar_home.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-house-door-fill"></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="silverstar_intro.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-journals"></i> Introduction
+                    </a>
+                </li>
+                <li>
+                    <a href="silverstar.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-star-fill"></i> Silver Star
+                    </a>
+                </li>
+                <li>
+                    <a href="silverstar_faq.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-question-diamond-fill"></i> FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="silverstar_download.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
+                        <i class="bi bi-download"></i> Download
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
 
     <main class="relative grid content-start pb-[4.444vw] gap-[4.444vw] font-poppins">
         <!-- Navbar -->
-        <nav class="sticky top-0 left-0 grid h-fit content-start bg-[#2B193D] border-r-[0.139vw] border-black">
-            <div class="grid p-[1.389vw]">
-                <ul class="flex justify-center gap-[1.111vw] font-semibold text-[1.111vw]">
+        <nav class="sticky top-0 left-0 grid w-full lg:h-fit content-start bg-[#2B193D] transition duration-300">
+            <div class="grid items-center lg:hidden py-[2.051vw] px-[5.128vw] text-white">
+                <button type="button" class="sidebar-btn shrink-0 flex items-center px-[3.59vw] py-[2.051vw] gap-x-[3.077vw] text-black bg-primary hover:bg-amber-400 rounded-[3.077vw] transition duration-300 cursor-pointer">
+                    <i class="text-[4.615vw] bi bi-list-ul"></i><p class="font-medium text-[4.615vw]">Menu</p>
+                </button>
+            </div>
+
+            <div class="hidden lg:grid p-[3.59vw] pt-[8.205vw] lg:p-[1.389vw]">
+                <ul class="grid lg:flex lg:justify-center gap-[3.077vw] lg:gap-[1.111vw] font-semibold text-[3.59vw] lg:text-[1.111vw]">
                     <li>
                         <a href="silverstar_home.html" class="flex items-center p-[0.833vw] gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
                             <i class="bi bi-house-door-fill"></i> Home
@@ -65,35 +125,35 @@
             </div>
         </nav>
 
-        <!-- What is MaGMML -->
-        <section class="grid content-start gap-[0.833vw] text-white">
-            <h1 class="font-bold text-center text-[2.222vw]">Download</h1>
-            <div class="grid mx-auto gap-[1.111vw] max-w-[66.667vw]">
-                <p class="text-justify text-[1.111vw]">Welcome to the download page! Here, you can download all the Silver Star screenshots for offline use. Feel free to use them if you prefer a more hands-off approach to figuring out the solutions yourself.</p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 1: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="https://github.com/huntthepast/magmml3_archive/releases/download/v.0.1.0/Tier.1.Star.zip">Link</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 2: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 3: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 4: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 5: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 6: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 7: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 8: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 9: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 10: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 11: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 12: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 13: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 14: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier 15: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier Wily: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Tier X: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">Shrine of Nebula: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
-                <p class="flex gap-[0.556vw] text-[1.111vw]">All: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+        <!-- Download -->
+        <section class="section-container">
+            <h1 class="header-main">Download</h1>
+            <div class="paragraph-container">
+                <p class="text-justify">Welcome to the download page! Here, you can download all the Silver Star screenshots for offline use. Feel free to use them if you prefer a more hands-off approach to figuring out the solutions yourself.</p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 1: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="https://github.com/huntthepast/magmml3_archive/releases/download/v.0.1.0/Tier.1.Star.zip">Link</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 2: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 3: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 4: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 5: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 6: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 7: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 8: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 9: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 10: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 11: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 12: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 13: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 14: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier 15: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier Wily: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Tier X: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">Shrine of Nebula: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
+                <p class="flex gap-[3.077vw] lg:gap-[0.556vw]">All: <span class="text-cyan-600 hover:text-amber-400 transition duration-300"><a target="_blank" href="silverstar_download.html" class="pointer-events-none">Under Construction</a></span></p>
             </div>
         </section>
     </main>
 
-    <footer class="grid place-content-center p-[1.111vw] text-[1.111vw] text-white">
+    <footer class="grid place-content-center p-[4.103vw] lg:p-[1.111vw] text-[3.59vw] lg:text-[1.111vw] text-white">
         Created by Hunt the Past
     </footer>
 
