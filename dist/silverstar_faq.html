@@ -34,8 +34,8 @@
     </header>
 
     <!-- Sidebar -->
-    <aside class="sidebar fixed top-0 left-0 grid w-full h-full content-start bg-[#2B193D] -translate-x-full lg:-translate-x-full transition duration-300 z-40">
-        <div class="grid font-mario overflow-hidden">
+    <aside class="sidebar fixed top-0 left-0 grid w-full h-full max-h-screen content-start bg-[#2B193D] -translate-x-full lg:-translate-x-full overflow-y-scroll transition duration-300 z-40">
+        <div class="grid font-mario">
             <div class="greenstar-container">
                 <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
                 <i class="greenstar-icon relative -right-[8.205vw] lg:right-0 bi bi-star-fill"></i>
@@ -51,7 +51,10 @@
                 <i class="bi bi-box-arrow-right"></i> Exit Sidebar 
             </button>
         </div>
-        <div class="grid p-[3.59vw] pt-[8.205vw] lg:p-[1.389vw]">
+        <div class="grid p-[3.59vw] w-full">
+            <div class="grid mx-auto w-full h-[0.256vw] lg:h-[0.069vw] bg-white/70 lg:max-w-[66.667vw]"></div>
+        </div>
+        <div class="grid p-[3.59vw] py-[8.205vw] lg:p-[1.389vw]">
             <ul class="grid lg:flex lg:justify-center gap-[6.154vw] lg:gap-[1.111vw] font-semibold text-[3.59vw] lg:text-[1.111vw]">
                 <li>
                     <a href="silverstar_home.html" class="flex items-center p-[3.077vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] bg-primary hover:bg-amber-400 rounded-[3.077vw] lg:rounded-[1.111vw] overflow-hidden transition duration-300 ease-in-out">
@@ -126,7 +129,7 @@
         <section class="grid content-start gap-[0.833vw] text-black">
             <div class="grid px-[5.128vw] lg:px-0 mx-auto gap-[8.205vw] lg:gap-[3.333vw] lg:max-w-[66.667vw]">
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Is there any reward for collecting all the Silver Stars?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -135,7 +138,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Where could the Silver Star or button be located in a level?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -144,7 +147,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Is there a pattern to Silver Star/Button placement?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -159,7 +162,7 @@
                     </div>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Do I have to collect all the Silver Stars in a single run?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -168,7 +171,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Do you need to use Bass or Proto Man to collect some Silver Stars?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -177,7 +180,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: So what’s the deal with the invisible buttons?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -186,7 +189,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Why don’t some buttons activate when I press them?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -195,7 +198,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Is there a Button Challenge that persists across multiple rooms?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -204,7 +207,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: I found multiple buttons in a single room and don't know how to solve them.</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -213,7 +216,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: I just saw a button slowly fall into a pit, what's up with that?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -223,7 +226,7 @@
                     </div>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Do I need to check every level in the Shrine of Nebula?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
@@ -232,7 +235,7 @@
                     </p>
                 </label>
                 <label class="accordion grid items-center cursor-pointer gap-[3.077vw] lg:gap-[1.111vw]">
-                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary">
+                    <div class="flex justify-between items-center p-[3.077vw] lg:p-[1.111vw] bg-primary hover:bg-amber-400 transition duration-300">
                         <h1 class="font-CaviarDreams font-bold text-[3.59vw] lg:text-[1.389vw] select-none pointer-events-none">Q: Some of these Silver Star locations are so obscure, how can you find all of them?</h1>
                         <button type="button" class="toggle-btn hidden"></button>
                     </div>
