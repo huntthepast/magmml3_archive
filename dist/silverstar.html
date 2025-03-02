@@ -86,48 +86,51 @@
     </aside>
 
     <!-- Filter Modal -->
-    <div class="SettingModal fixed top-0 left-0 grid items-center p-[4.103vw] lg:p-[2.222vw] w-full h-full bg-black/70 z-30 opacity-0 pointer-events-none transition duration-300">
-        <div class="Setting grid content-start p-0 lg:p-[0.278vw] mx-auto w-full lg:w-[60%] h-fit text-black bg-black rounded-[1.111vw] -translate-y-full scale-75 transition duration-300">
-            <div class="flex items-center justify-between p-[3.077vw] lg:p-[1.111vw] bg-primary rounded-t-[3.077vw] lg:rounded-t-[1.111vw]">
+    <div class="SettingModal fixed top-0 left-0 grid items-center w-full h-screen lg:h-full bg-black/70 z-30 opacity-0 pointer-events-none transition duration-300 overflow-y-scroll">
+        <div class="Setting grid content-start lg:p-[0.556vw] mx-auto w-full h-full lg:w-[60%] lg:h-fit lg:bg-black text-black lg:rounded-[1.111vw] border-0 lg:border-[0.139vw] border-primary -translate-y-full scale-75 transition duration-300">
+            <div class="sticky lg:relative top-0 flex items-center justify-between py-[2.051vw] px-[3.077vw] lg:p-[1.111vw] bg-primary lg:rounded-t-[1.111vw] lg:rounded-none border-b-[0.513vw] lg:border-b-0 border-b-black">
                 <h1 class="font-bold lg:font-semibold text-[5.128vw] lg:text-[1.667vw]">Silver Star Setting</h1>
                 <button type="button" class="setting-btn grid place-content-center w-[12.308vw] h-[12.308vw] lg:w-[3.333vw] lg:h-[3.333vw] text-white hover:text-black bg-black hover:bg-amber-400 border border-black rounded-full transition duration-300 cursor-pointer">
                     <i class="text-[5.128vw] lg:text-[1.667vw] bi bi-x-octagon"></i>
                 </button>
             </div>
-            <div class="grid lg:grid-cols-8 rounded-b-[1.111vw] overflow-hidden">
-                <div class="lg:col-span-2 flex lg:grid h-full bg-primary/40">
-                    <div class="grid content-start px-[5.128vw] py-[3.077vw] lg:p-[1.111vw] gap-[2.051vw] lg:gap-[0.833vw]">
+            <div class="grid lg:grid-cols-8 rounded-[3.077vw] lg:rounded-none lg:rounded-b-[1.111vw] bg-black border-b-[0.256vw] lg:border-0 border-primary overflow-hidden">
+                <div class="lg:col-span-2 flex lg:grid p-[5.128vw] lg:p-[1.111vw] h-full bg-[#2B193D] lg:bg-[#2B193D]/60">
+                    <div class="grid content-start gap-[2.051vw] lg:gap-[0.833vw]">
                         <label for="stDisplay">
                             <input type="radio" name="silverSetting" id="stDisplay" class="categoryRadio hidden" value="display" checked>
                             <div class="flex items-center justify-start py-[2.051vw] px-[3.077vw] lg:p-[0.556vw] gap-[3.077vw] lg:gap-[0.556vw] bg-primary rounded-[2.051vw] lg:rounded-[0.556vw] border border-black transition duration-300 cursor-pointer">
                                 <i class="text-[4.103vw] lg:text-[1.111vw] bi bi-display"></i>
-                                <p class="font-medium text-[4.103vw] lg:text-[0.972vw]">Display & Sort</p>
+                                <p class="font-semibold text-[4.103vw] lg:text-[0.972vw]">Display & Sort</p>
                             </div>
                         </label>
                     </div>
                 </div>
-                <div class="lg:col-span-6 grid content-start p-[5.128vw] lg:p-[1.111vw] h-full bg-[#2B193D] text-[4.103vw] lg:text-[1.111vw]">
-                    <div id="slDisplay" class="grid content-start gap-[3.59vw] lg:gap-[1.111vw] text-white">
+                <div class="grid lg:hidden px-[5.128vw] lg:px-[1.111vw] w-full">
+                    <div class="grid mx-auto w-full h-[0.256vw] lg:h-[0.069vw] bg-white/70"></div>
+                </div>
+                <div class="lg:col-span-6 grid content-start py-[6.154vw] px-[5.128vw] lg:p-[1.111vw] h-full bg-[#2B193D] text-[4.103vw] lg:text-[1.111vw]">
+                    <div id="slDisplay" class="grid content-start gap-[6.154vw] lg:gap-[1.111vw] text-white">
                         <div class="grid gap-[2.051vw] lg:gap-[0.556vw]">
                             <p>Levels Per Page</p>
-                            <div class="grid grid-cols-3 gap-[3.077vw] lg:gap-[1.111vw] text-[3.077vw] lg:text-[0.972vw]">
+                            <div class="grid grid-cols-3 gap-[3.077vw] lg:gap-[1.111vw] font-semibold text-[3.077vw] lg:text-[0.972vw]">
                                 <label for="opLayoutPage20" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutPage" id="opLayoutPage20" class="SelectionRadio hidden" value="20" checked>
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-card-image"></i>
                                         <p>20</p>
                                     </div>
                                 </label>
                                 <label for="opLayoutPage40" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutPage" id="opLayoutPage40" class="SelectionRadio hidden" value="40">
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600  rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-card-image"></i>
                                         <p>40</p>
                                     </div>
                                 </label>
                                 <label for="opLayoutPage60" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutPage" id="opLayoutPage60" class="SelectionRadio hidden" value="60">
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600  rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-card-image"></i>
                                         <p>60</p>
                                     </div>
@@ -136,24 +139,43 @@
                         </div>
                         <div class="grid gap-[2.051vw] lg:gap-[0.556vw]">
                             <p>Cover Image Visibility</p>
-                            <div class="grid grid-cols-3 gap-[3.077vw] lg:gap-[1.111vw] text-[3.077vw] lg:text-[0.972vw]">
+                            <div class="grid grid-cols-3 gap-[3.077vw] lg:gap-[1.111vw] font-semibold text-[3.077vw] lg:text-[0.972vw]">
                                 <label for="opLayoutVisShow" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutVisibility" id="opLayoutVisShow" class="SelectionRadio hidden" value="show" checked>
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-eye"></i>
                                         <p>Visible</p>
                                     </div>
                                 </label>
                                 <label for="opLayoutVisBlur" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutVisibility" id="opLayoutVisBlur" class="SelectionRadio hidden" value="blur">
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-eyeglasses"></i>
                                         <p>Blur</p>
                                     </div>
                                 </label>
                                 <label for="opLayoutVisHide" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutVisibility" id="opLayoutVisHide" class="SelectionRadio hidden" value="hide">
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                        <i class="bi bi-eye-slash"></i>
+                                        <p>Hide</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="grid gap-[2.051vw] lg:gap-[0.556vw]">
+                            <p>Star Shorcut Button</p>
+                            <div class="grid grid-cols-2 gap-[3.077vw] lg:gap-[1.111vw] font-semibold text-[3.077vw] lg:text-[0.972vw]">
+                                <label for="opStarVisShow" class="group cursor-pointer">
+                                    <input type="radio" name="opStarVisibility" id="opStarVisShow" class="SelectionRadio hidden" value="show" checked>
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                        <i class="bi bi-eye"></i>
+                                        <p>Visible</p>
+                                    </div>
+                                </label>
+                                <label for="opStarVisHide" class="group cursor-pointer">
+                                    <input type="radio" name="opStarVisibility" id="opStarVisHide" class="SelectionRadio hidden" value="hide">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-eye-slash"></i>
                                         <p>Hide</p>
                                     </div>
@@ -162,17 +184,17 @@
                         </div>
                         <div class="grid gap-[2.051vw] lg:gap-[0.556vw]">
                             <p>Sort By</p>
-                            <div class="grid grid-cols-2 gap-[3.077vw] lg:gap-[1.111vw] text-[3.077vw] lg:text-[0.972vw]">
+                            <div class="grid grid-cols-2 gap-[3.077vw] lg:gap-[1.111vw] font-semibold text-[3.077vw] lg:text-[0.972vw]">
                                 <label for="opLayoutSortByNumber" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutSortBy" id="opLayoutSortByNumber" class="SelectionRadio hidden" value="entry" checked>
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-123"></i>
                                         <p>Level Entry</p>
                                     </div>
                                 </label>
                                 <label for="opLayoutSortByAlphabet" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutSortBy" id="opLayoutSortByAlphabet" class="SelectionRadio hidden" value="name">
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-alphabet"></i>
                                         <p>Level Name</p>
                                     </div>
@@ -181,17 +203,17 @@
                         </div>
                         <div class="grid gap-[2.051vw] lg:gap-[0.556vw]">
                             <p>Sort Order</p>
-                            <div class="grid grid-cols-2 gap-[3.077vw] lg:gap-[1.111vw] text-[3.077vw] lg:text-[0.972vw]">
+                            <div class="grid grid-cols-2 gap-[3.077vw] lg:gap-[1.111vw] font-semibold text-[3.077vw] lg:text-[0.972vw]">
                                 <label for="opLayoutSortDescend" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutSort" id="opLayoutSortDescend" class="SelectionRadio hidden" value="descend" checked>
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-sort-alpha-down"></i>
                                         <p>Descend</p>
                                     </div>
                                 </label>
                                 <label for="opLayoutSortAscend" class="group cursor-pointer">
                                     <input type="radio" name="opLayoutSort" id="opLayoutSortAscend" class="SelectionRadio hidden" value="ascend">
-                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] bg-black rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
+                                    <div class="flex items-center justify-center p-[2.051vw] lg:p-[0.556vw] gap-[2.051vw] lg:gap-[0.833vw] hover:text-black bg-black hover:bg-amber-600 rounded-[2.051vw] lg:rounded-[0.556vw] transition duration-300">
                                         <i class="bi bi-sort-alpha-up"></i>
                                         <p>Ascend</p>
                                     </div>
@@ -264,7 +286,7 @@
                 </div>
                 <div class="grid content-start gap-[0.833vw]">
                     <div class="grid content-start">
-                        <div class="stage-description grid gap-y-[0.556vw] text-[3.077vw] lg:text-[1.111vw]">Level Description</div>
+                        <div class="stage-description grid gap-y-[0.556vw] text-justify text-[3.077vw] lg:text-[1.111vw]">Level Description</div>
                     </div>
                 </div>
                 <div class="silverstar-index grid grid-cols-5 gap-[0.833vw]">
@@ -313,7 +335,7 @@
         </div>
 
         <section class="lg:col-span-6 relative grid content-start lg:gap-[0.833vw]">
-            <div class="sticky top-0 flex justify-between p-[2.051vw] lg:p-[1.111vw] bg-primary text-[1.111vw] border-b-[0.139vw] border-b-black shadow-black shadow-md z-10">
+            <div class="sticky top-0 grid grid-cols-2 lg:flex lg:justify-between p-[2.051vw] lg:p-[1.111vw] bg-primary text-[1.111vw] border-b-[0.139vw] border-b-black shadow-black shadow-md z-10">
                 <div class="flex items-center gap-[2.051vw] lg:gap-[1.111vw]">
                     <button type="button" class="sidebar-btn flex lg:hidden items-center justify-center p-[2.051vw] lg:p-[0.833vw] gap-[2.051vw] lg:gap-[0.556vw] text-[3.077vw] lg:text-[1.111vw] text-white hover:text-black bg-black hover:bg-amber-400 border border-black rounded-[0.556vw] transition duration-300 cursor-pointer">
                         <p>Menu</p>
@@ -328,16 +350,16 @@
                         <input type="checkbox" name="hintMode" id="hintMode">
                     </label>
                 </div>
-                <div class="flex rounded-[1.111vw] border-black border-[0.139vw] overflow-hidden">
-                    <div class="grid">
-                        <input id="searchInput" type="text" class="grid py-[0.556vw] px-[0.833vw] bg-tertiary outline-0" placeholder="search...">
+                <div class="flex w-full lg:w-fit rounded-[1.111vw] bg-yellow-300/20 border-black border-[0.256vw] lg:border-[0.139vw] overflow-hidden">
+                    <div class="grid w-full lg:w-fit">
+                        <input id="searchInput" type="text" class="grid lg:py-[0.556vw] px-[2.051vw] lg:px-[0.833vw] w-full text-[3.59vw] lg:text-[1.111vw] bg-tertiary outline-0" placeholder="search...">
                     </div>
-                    <button type="button" id="searchButton" class="grid place-content-center p-[0.833vw] text-white hover:text-black bg-black hover:bg-amber-400 border-black border-l-[0.139vw] transition duration-300 cursor-pointer">
-                        <i class="text-[1.111vw] bi bi-search"></i>
+                    <button type="button" id="searchButton" class="grid place-content-center px-[3.077vw] lg:p-[0.833vw] text-white hover:text-black bg-black hover:bg-amber-400 border-black border-l-[0.256vw] lg:border-l-[0.139vw] transition duration-300 cursor-pointer">
+                        <i class="text-[2.051vw] lg:text-[1.111vw] bi bi-search"></i>
                     </button>
                 </div>
             </div>
-            <div id="stageGallery" class="grid grid-cols-2 lg:grid-cols-4 content-start p-[2.051vw] lg:p-[1.389vw] lg:pb-[4.444vw] gap-[2.051vw] lg:gap-x-[1.111vw] lg:gap-y-[1.389vw]">
+            <div id="stageGallery" class="grid grid-cols-2 lg:grid-cols-4 content-start px-[2.051vw] py-[4.103vw] lg:p-[1.389vw] lg:pb-[4.444vw] gap-x-[2.051vw] gap-y-[3.077vw] lg:gap-x-[1.111vw] lg:gap-y-[1.389vw]">
             </div>
         </section>
     </main>
