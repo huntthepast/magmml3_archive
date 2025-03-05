@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="relative bg-black overflow-x-hidden">
-    <div class="fixed top-0 left-0 w-screen h-screen -z-20">
+    <!-- Bcakground Image -->
+    <div class="fixed top-0 left-0 w-screen h-screen -z-20 bg-black">
         <picture class="w-full h-full">
             <source srcset="img/galaxy1_resized.webp" type="image/webp">
             <img loading="lazy" src="img/galaxy1_resized.png" alt="X6meme / Silver Star" class="w-full h-full object-center object-cover opacity-40">
@@ -227,20 +228,20 @@
     </div>
 
     <!-- Silver Star Modal -->
-    <div class="SilverStarModal fixed top-0 left-0 grid items-center p-[2.222vw] w-full h-full max-h-screen bg-black/70 z-30 opacity-0 pointer-events-none transition duration-300 overflow-y-scroll">
-        <div class="SilverStar relative grid lg:grid-cols-5 content-start p-[0.833vw] gap-x-[1.111vw] mx-auto w-full lg:w-[80%] h-fit text-white bg-black rounded-[1.111vw] border-[0.139vw] border-primary/60 -translate-y-full scale-75 transition duration-300">
+    <div class="SilverStarModal fixed top-0 left-0 grid items-center lg:p-[2.222vw] w-full h-screen lg:h-full bg-black/70 z-30 opacity-0 pointer-events-none transition duration-300 overflow-y-scroll overflow-x-hidden">
+        <div class="SilverStar relative grid content-start p-[0.833vw] gap-x-[1.111vw] mx-auto w-full lg:w-[80%] h-full lg:h-fit text-white bg-black rounded-[1.111vw] border-[0.139vw] border-primary/60 -translate-y-full scale-75 transition duration-300">
             <!-- Next & Previous Button -->
-            <div class="absolute top-[38%] -right-[2.222vw] flex justify-end z-10">
+            <div class="absolute top-[38%] -right-[2.222vw] hidden lg:flex justify-end z-10">
                 <button type="button" class="silverStar-Next grid place-content-center w-[3.333vw] h-[3.333vw] text-white disabled:hover:text-white bg-black disabled:hover:bg-black hover:bg-amber-400 hover:text-black disabled:hover:scale-100 hover:scale-110 rounded-full border-[0.139vw] border-primary disabled:hover:border-primary hover:border-black disabled:opacity-50 transition duration-300 disabled:cursor-default cursor-pointer">
                     <i class="text-[1.111vw] bi bi-arrow-right"></i>
                 </button>
             </div>
-            <div class="absolute top-[50%] -right-[2.222vw] flex justify-end z-10">
+            <div class="absolute top-[50%] -right-[2.222vw] hidden lg:flex justify-end z-10">
                 <button type="button" disabled class="silverStar-Home grid place-content-center w-[3.333vw] h-[3.333vw] text-white disabled:hover:text-white bg-black disabled:hover:bg-black hover:bg-amber-400 hover:text-black disabled:hover:scale-100 hover:scale-110 rounded-full border-[0.139vw] border-primary disabled:hover:border-primary hover:border-black disabled:opacity-50 transition duration-300 disabled:cursor-default cursor-pointer">
                     <i class="text-[1.111vw] bi bi-house-door-fill"></i>
                 </button>
             </div>
-            <div class="absolute top-[62%] -right-[2.222vw] flex justify-end z-10">
+            <div class="absolute top-[62%] -right-[2.222vw] hidden lg:flex justify-end z-10">
                 <button type="button" disabled class="silverStar-Prev grid place-content-center w-[3.333vw] h-[3.333vw] text-white disabled:hover:text-white bg-black disabled:hover:bg-black hover:bg-amber-400 hover:text-black disabled:hover:scale-100 hover:scale-110 rounded-full border-[0.139vw] border-primary disabled:hover:border-primary hover:border-black disabled:opacity-50 transition duration-300 disabled:cursor-default cursor-pointer">
                     <i class="text-[1.111vw] bi bi-arrow-left"></i>
                 </button>
@@ -274,7 +275,7 @@
 
             <!-- Description -->
             <div class="lg:col-span-3 relative grid content-between p-[0.833vw] pt-[2.222vw] gap-[2.222vw] bg-[#2B193D] rounded-[1.111vw]">
-                <div class="absolute -top-[2.222vw] -right-[2.222vw] flex justify-end">
+                <div class="absolute -top-[2.222vw] -right-[2.222vw] hidden lg:flex justify-end">
                     <button type="button" class="silverStarExit grid place-content-center w-[3.333vw] h-[3.333vw] text-white hover:text-black bg-black hover:bg-amber-400 border-[0.139vw] border-primary hover:border-amber-400 rounded-full transition duration-300 cursor-pointer">
                         <i class="text-[1.667vw] bi bi-x-octagon"></i>
                     </button>
